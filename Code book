@@ -1,0 +1,52 @@
+This code book explains what has been done to the raw data to merge train and test data from the assignment of the coursera course: "Getting and Cleaning Data", week 4.
+The tidy data set is store in the file "tidy_data.txt". It contains 81 variables and 180 observations.
+The first variable is the only one to be a factor. The others are all numeric.
+To obtain this data set, the raw dat from two data set (train and test) have been merged. The columns with mean and stadard deviation (SD) have been extracted.
+The same transformations have been made for the test data set and then for the train data set.
+A subject has been assigned to the file X_test/train. The columns names have been assigned. The different activities have been assigned a name to the file y_test/train.
+The data have been bonded to creat a single file for train and a single file for test.
+Train data and set data have been merged and labels added to abtain the final tidy data set "melt_data".
+Mean have been calculated for each variable and a new tidy file have been created "tidy_data.txt".
+The variables are summarized here:
+
+"subject"                         "Activity_Label"                 
+ [3] "tBodyAcc.mean...X"               "tBodyAcc.mean...Y"              
+ [5] "tBodyAcc.mean...Z"               "tBodyAcc.std...X"               
+ [7] "tBodyAcc.std...Y"                "tBodyAcc.std...Z"               
+ [9] "tGravityAcc.mean...X"            "tGravityAcc.mean...Y"           
+[11] "tGravityAcc.mean...Z"            "tGravityAcc.std...X"            
+[13] "tGravityAcc.std...Y"             "tGravityAcc.std...Z"            
+[15] "tBodyAccJerk.mean...X"           "tBodyAccJerk.mean...Y"          
+[17] "tBodyAccJerk.mean...Z"           "tBodyAccJerk.std...X"           
+[19] "tBodyAccJerk.std...Y"            "tBodyAccJerk.std...Z"           
+[21] "tBodyGyro.mean...X"              "tBodyGyro.mean...Y"             
+[23] "tBodyGyro.mean...Z"              "tBodyGyro.std...X"              
+[25] "tBodyGyro.std...Y"               "tBodyGyro.std...Z"              
+[27] "tBodyGyroJerk.mean...X"          "tBodyGyroJerk.mean...Y"         
+[29] "tBodyGyroJerk.mean...Z"          "tBodyGyroJerk.std...X"          
+[31] "tBodyGyroJerk.std...Y"           "tBodyGyroJerk.std...Z"          
+[33] "tBodyAccMag.mean.."              "tBodyAccMag.std.."              
+[35] "tGravityAccMag.mean.."           "tGravityAccMag.std.."           
+[37] "tBodyAccJerkMag.mean.."          "tBodyAccJerkMag.std.."          
+[39] "tBodyGyroMag.mean.."             "tBodyGyroMag.std.."             
+[41] "tBodyGyroJerkMag.mean.."         "tBodyGyroJerkMag.std.."         
+[43] "fBodyAcc.mean...X"               "fBodyAcc.mean...Y"              
+[45] "fBodyAcc.mean...Z"               "fBodyAcc.std...X"               
+[47] "fBodyAcc.std...Y"                "fBodyAcc.std...Z"               
+[49] "fBodyAcc.meanFreq...X"           "fBodyAcc.meanFreq...Y"          
+[51] "fBodyAcc.meanFreq...Z"           "fBodyAccJerk.mean...X"          
+[53] "fBodyAccJerk.mean...Y"           "fBodyAccJerk.mean...Z"          
+[55] "fBodyAccJerk.std...X"            "fBodyAccJerk.std...Y"           
+[57] "fBodyAccJerk.std...Z"            "fBodyAccJerk.meanFreq...X"      
+[59] "fBodyAccJerk.meanFreq...Y"       "fBodyAccJerk.meanFreq...Z"      
+[61] "fBodyGyro.mean...X"              "fBodyGyro.mean...Y"             
+[63] "fBodyGyro.mean...Z"              "fBodyGyro.std...X"              
+[65] "fBodyGyro.std...Y"               "fBodyGyro.std...Z"              
+[67] "fBodyGyro.meanFreq...X"          "fBodyGyro.meanFreq...Y"         
+[69] "fBodyGyro.meanFreq...Z"          "fBodyAccMag.mean.."             
+[71] "fBodyAccMag.std.."               "fBodyAccMag.meanFreq.."         
+[73] "fBodyBodyAccJerkMag.mean.."      "fBodyBodyAccJerkMag.std.."      
+[75] "fBodyBodyAccJerkMag.meanFreq.."  "fBodyBodyGyroMag.mean.."        
+[77] "fBodyBodyGyroMag.std.."          "fBodyBodyGyroMag.meanFreq.."    
+[79] "fBodyBodyGyroJerkMag.mean.."     "fBodyBodyGyroJerkMag.std.."     
+[81] "fBodyBodyGyroJerkMag.meanFreq.."
